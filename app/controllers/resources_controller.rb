@@ -2,7 +2,7 @@ class ResourcesController < ApplicationController
   # GET /resources
   # GET /resources.json
   def index
-    @resources = Resource.all
+    @resources = Resource.all.reverse
 
     respond_to do |format|
       format.html # index.html.erb
